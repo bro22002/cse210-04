@@ -19,10 +19,10 @@ class Cast:
             group (string): The name of the group.
             actor (Actor): The actor to add.
         """
-        if not group in self._actors.keys():
+        if group not in self._actors.keys():
             self._actors[group] = []
             
-        if not actor in self._actors[group]:
+        if actor not in self._actors[group]:
             self._actors[group].append(actor)
 
     def get_actors(self, group):
